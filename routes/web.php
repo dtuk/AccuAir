@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/sensor', function () {
     return view('sensor');
 });
+
+Route::get('/map', function () {
+    return view('map');
+});

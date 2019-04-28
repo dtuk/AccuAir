@@ -93,7 +93,7 @@
 
                 </ul>
 
-                <!-- Right -->
+                {{--<!-- Right -->
                 <ul class="navbar-nav nav-flex-icons">
                     <li class="nav-item">
                         <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
@@ -107,7 +107,7 @@
                     </li>
 
                 </ul>
-
+--}}
             </div>
 
         </div>
@@ -283,60 +283,104 @@
         <!--Section: Main info-->
 
 
-
-
-
-
-
     </div>
 </main>
 <!--Main layout-->
 
 <!--Footer-->
 <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-
+    <!-- Footer Links -->
     <hr class="my-4">
-
-    <!-- Social icons -->
-    <div class="pb-4">
-        <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-            <i class="fab fa-facebook-f mr-3"></i>
-        </a>
-
-        <a href="https://twitter.com/MDBootstrap" target="_blank">
-            <i class="fab fa-twitter mr-3"></i>
-        </a>
+    <div class="container-fluid text-center text-md-center">
 
 
-        <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-            <i class="fab fa-google-plus-g mr-3"></i>
-        </a>
+        <!-- Grid row -->
+        <div class="row">
 
-        <a href="https://dribbble.com/mdbootstrap" target="_blank">
-            <i class="fab fa-dribbble mr-3"></i>
-        </a>
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
 
-        <a href="https://pinterest.com/mdbootstrap" target="_blank">
-            <i class="fab fa-pinterest mr-3"></i>
-        </a>
 
-        <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-            <i class="fab fa-github mr-3"></i>
-        </a>
+                <!-- Content -->
+                <h5 class="text-uppercase">Accuair Web Application</h5>
+                <p>Air pollution  identification System.</p>
 
-        <a href="http://codepen.io/mdbootstrap/" target="_blank">
-            <i class="fab fa-codepen mr-3"></i>
-        </a>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <div class="text-left">
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Useful Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">About Accuair</a>
+                        </li>
+                        <li>
+                            <a href="#!">Gas Pollution</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <div class="text-left">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Find Us</h5>
+
+                    <ul class="list-unstyled">
+
+                        <li>
+                            <a href="https://dribbble.com/mdbootstrap" target="_blank">
+                                <i class="fab fa-google-plus-g mr-3"></i>Google Plus
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+                                <i class="fab fa-facebook-f mr-3"></i>Facebook
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://twitter.com/MDBootstrap" target="_blank">
+                                <i class="fab fa-twitter mr-3"></i>Twitter
+                            </a>
+                        </li>
+
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
     </div>
-    <!-- Social icons -->
+    <!-- Footer Links -->
 
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-        © 2019 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        <a href="https://mdbootstrap.com/education/bootstrap/"> </a>
     </div>
-    <!--/.Copyright-->
+    <!-- Copyright -->
 
 </footer>
 <!--/.Footer-->

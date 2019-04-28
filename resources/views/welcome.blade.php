@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<!DOCTYPE html>
-<html lang="en">
+
 
 <head>
     <meta charset="utf-8">
@@ -177,7 +176,7 @@
 
                 </ul>
 
-                <!-- Right -->
+               {{-- <!-- Right -->
                 <ul class="navbar-nav nav-flex-icons">
                     <li class="nav-item">
                         <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
@@ -190,7 +189,7 @@
                         </a>
                     </li>
 
-                </ul>
+                </ul>--}}
 
             </div>
 
@@ -201,20 +200,14 @@
     <!--Carousel Wrapper-->
     <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
-        <!--Indicators-->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-            <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-        </ol>
-        <!--/.Indicators-->
+
 
         <!--Slides-->
         <div class="carousel-inner" role="listbox">
 
             <!--First slide-->
             <div class="carousel-item active">
-                <div class="view" style="background-image: url('http://globe-net.com/wp-content/uploads/power-plant-smoke-stacks.jpg'); background-repeat: no-repeat; background-size: cover;">
+                <div class="view" style="background-image: url('https://cms.qz.com/wp-content/uploads/2017/12/cross-state-air-pollution-e1514482881707.jpg'); background-repeat: no-repeat; background-size: cover;">
 
                     <!-- Mask & flexbox options-->
                     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -231,9 +224,7 @@
                             </p>
 
                             <p class="mb-4 d-none d-md-block">
-                                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                                    written versions
-                                    available. Create your own, stunning website.</strong>
+                                <strong>Our System is based on measurement of Carbon Dioxide(CO2), Carbon Monoxide(CO), Temperature,Humidity emissions.So How polluted is the air today? Check out the real-time air pollution map.</strong>
                             </p>
 
 
@@ -247,92 +238,9 @@
             </div>
             <!--/First slide-->
 
-            <!--Second slide-->
-            <div class="carousel-item">
-                <div class="view" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiAZNy14bsxVyNm0E-DzVkv56Ecpv0of0AjKVry8GOc4SK4cD4'); background-repeat: no-repeat; background-size: cover;">
-
-                    <!-- Mask & flexbox options-->
-                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-                        <!-- Content -->
-                        <div class="text-center white-text mx-5 wow fadeIn">
-                            <h1 class="mb-4">
-                                <strong>Accuair</strong>
-                            </h1>
-
-                            <p>
-                                <strong>Air pollution  identification
-                                    System</strong>
-                            </p>
-
-                            <p class="mb-4 d-none d-md-block">
-                                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                                    written versions
-                                    available. Create your own, stunning website.</strong>
-                            </p>
-
-
-                        </div>
-                        <!-- Content -->
-
-                    </div>
-                    <!-- Mask & flexbox options-->
-
-                </div>
-            </div>
-            <!--/Second slide-->
-
-            <!--Third slide-->
-            <div class="carousel-item">
-                <div class="view" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhgo9z9bZizZhG05hmjPhzGKWbUW-TxfAbK7mPRfRKf3QVzv_HUw'); background-repeat: no-repeat; background-size: cover;">
-
-                    <!-- Mask & flexbox options-->
-                    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
-
-                        <!-- Content -->
-                        <div class="text-center white-text mx-5 wow fadeIn">
-                            <h1 class="mb-4">
-                                <strong>Accuair</strong>
-                            </h1>
-
-                            <p>
-                                <strong>Air pollution  identification
-                                    System</strong>
-                            </p>
-
-                            <p class="mb-4 d-none d-md-block">
-                                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and
-                                    written versions
-                                    available. Create your own, stunning website.</strong>
-                            </p>
-
-                            <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start
-                                free tutorial
-                                <i class="fas fa-graduation-cap ml-2"></i>
-                            </a>
-                        </div>
-                        <!-- Content -->
-
-                    </div>
-                    <!-- Mask & flexbox options-->
-
-                </div>
-            </div>
-            <!--/Third slide-->
 
         </div>
         <!--/.Slides-->
-
-        <!--Controls-->
-        <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        <!--/.Controls-->
 
 
     </div>
@@ -343,13 +251,51 @@
 
 </header>
 
-<hr class="my-5">
 
+<br>
 
-<input id="pac-input" class="controls" type="text" placeholder="Search Box">
 <div id="map"></div>
 
-<hr class="my-5">
+<!--Section: Main info-->
+<section class="mt-5 wow fadeIn">
+    <hr class="my-5">
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+            <img src="home/img/Screenshot.png" class="img-fluid z-depth-1-half"
+                 alt="">
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-6 mb-4">
+
+            <!-- Main heading -->
+            <h3 class="h3 mb-3">How To Use This Web Application</h3>
+            <p>To get more information about a specific city, move your move over any of the
+                the icon in the above map, then click to get the full air pollution historical data.
+            </p>
+            <p>Our System is based on measurement of Carbon Dioxide(CO2), Carbon Monoxide(CO), Temperature,Humidity emissions.All measurements are based on hourly readings</p>
+            <!-- Main heading -->
+
+            <hr>
+
+
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    <!--Grid row-->
+
+</section>
+<!--Section: Main info-->
+
+
 
 {{--<!--Main layout-->--}}
 {{--<main>--}}
@@ -439,9 +385,12 @@
 
 
 <!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
+<!--Footer-->
+<footer class="page-footer text-center font-small mt-4 wow fadeIn">
     <!-- Footer Links -->
-    <div class="container-fluid text-center text-md-left">
+    <hr class="my-4">
+    <div class="container-fluid text-center text-md-center">
+
 
         <!-- Grid row -->
         <div class="row">
@@ -449,9 +398,11 @@
             <!-- Grid column -->
             <div class="col-md-6 mt-md-0 mt-3">
 
+
                 <!-- Content -->
-                <h5 class="text-uppercase">Footer Content</h5>
-                <p>Here you can use rows and columns here to organize your footer content.</p>
+                <h5 class="text-uppercase">Accuair Web Application</h5>
+                <p>Air pollution  identification System.</p>
+
 
             </div>
             <!-- Grid column -->
@@ -460,48 +411,59 @@
 
             <!-- Grid column -->
             <div class="col-md-3 mb-md-0 mb-3">
+                <div class="text-left">
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Useful Links</h5>
 
-                <!-- Links -->
-                <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">About Accuair</a>
+                        </li>
+                        <li>
+                            <a href="#!">Gas Pollution</a>
+                        </li>
 
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#!">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 2</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 3</a>
-                    </li>
-                    <li>
-                        <a href="#!">Link 4</a>
-                    </li>
-                </ul>
+                    </ul>
+                </div>
+
+
 
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
             <div class="col-md-3 mb-md-0 mb-3">
+                <div class="text-left">
 
                 <!-- Links -->
-                <h5 class="text-uppercase">Links</h5>
+                <h5 class="text-uppercase">Find Us</h5>
 
                 <ul class="list-unstyled">
+
                     <li>
-                        <a href="#!">Link 1</a>
+                        <a href="https://dribbble.com/mdbootstrap" target="_blank">
+                            <i class="fab fa-google-plus-g mr-3"></i>Google Plus
+                        </a>
+
                     </li>
+
                     <li>
-                        <a href="#!">Link 2</a>
+                        <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+                            <i class="fab fa-facebook-f mr-3"></i>Facebook
+                        </a>
                     </li>
+
                     <li>
-                        <a href="#!">Link 3</a>
+                        <a href="https://twitter.com/MDBootstrap" target="_blank">
+                            <i class="fab fa-twitter mr-3"></i>Twitter
+                        </a>
                     </li>
-                    <li>
-                        <a href="#!">Link 4</a>
-                    </li>
+
+
+
+
                 </ul>
+                </div>
 
             </div>
             <!-- Grid column -->
@@ -513,13 +475,12 @@
     <!-- Footer Links -->
 
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2018 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    <div class="footer-copyright text-center py-3">
+        <a href="https://mdbootstrap.com/education/bootstrap/"> </a>
     </div>
     <!-- Copyright -->
 
 </footer>
-
 <!--/.Footer-->
 
 <!-- SCRIPTS -->
@@ -551,8 +512,8 @@
 
     function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -33.8688, lng: 151.2195},
-            zoom: 13,
+            center: {lat: 7.873054, lng: 80.771797},
+            zoom: 7.5,
             mapTypeId: 'roadmap'
         });
 
@@ -617,7 +578,7 @@
     }
 
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places&callback=initAutocomplete"
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6dnjTHHpUV7dWHTFB9ks33sx2dvzINpE&libraries=places&callback=initAutocomplete"
         async defer></script>
 
 

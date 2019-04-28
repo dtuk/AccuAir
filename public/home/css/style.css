@@ -20,16 +20,16 @@ body,
 
 /* Navbar animation */
 .navbar {
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color:#052865; }
 
 .top-nav-collapse {
-  background-color: #929FBA; }
+  background-color: #052865; }
 
 /* Adding color to the Navbar on mobile */
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #929FBA; } }
+    background-color: #052865; } }
 
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
-  background-color: #929FBA; }
+  background-color: #052865; }
