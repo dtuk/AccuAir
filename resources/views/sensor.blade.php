@@ -1,126 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Chart</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="home/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="home/css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="home/css/style.min.css" rel="stylesheet">
-    <style type="text/css">
-        html,
-        body,
-        header,
-
-
-        @media (max-width: 740px) {
-
-            html,
-            body,
-            header,
-            .carousel {
-                height: 100vh;
-            }
-        }
-
-        @media (min-width: 800px) and (max-width: 850px) {
-
-            html,
-            body,
-            header,
-            .carousel {
-                height: 100vh;
-            }
-        }
-
-        @media (min-width: 800px) and (max-width: 850px) {
-            .navbar:not(.top-nav-collapse) {
-                background: #929FBA !important;
-            }
-        }
-
-        #container {
-            min-width: 310px;
-            height: 400px;
-            margin: 0 auto;
-        }
-
-    </style>
-</head>
-
+@extends('layouts.layout')
 <body>
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
-<header>
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
 
-    <!-- Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
-        <div class="container">
+        <!--First slide-->
+        <div class="carousel-item active">
+            <div class="view" style="background-image: url('https://vrworldnyc.com/wp-content/uploads/2017/06/contact-1-2.jpg'); background-repeat: no-repeat; background-size: cover;">
 
-            <!-- Brand -->
+                <!-- Mask & flexbox options-->
+                <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
 
-            <strong class="navbar-brand">Accuair</strong>
+                    <!-- Content -->
+                    <div class="text-center white-text mx-5 wow fadeIn">
+                        <h1 class="mb-4">
+                            <strong>Accuair</strong>
+                        </h1>
+                        <div class="center"> <img src="/home/img/newlogo.png" width="100px" height="100px" alt="accuair"></div>
 
 
-            <!-- Collapse -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                        <p>
+                        <h4>"Just Breathing Can Be Such a luxury Somethings"</h4>
+                        </p>
 
-            <!-- Links -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        {{--<p class="mb-4 d-none d-md-block">--}}
+                        {{--<strong></strong>--}}
+                        {{--</p>--}}
 
-                <!-- Left -->
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About Accuair</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Gas Pollution</a>
-                    </li>
 
-                </ul>
+                    </div>
+                    <!-- Content -->
 
-                {{--<!-- Right -->
-                <ul class="navbar-nav nav-flex-icons">
-                    <li class="nav-item">
-                        <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
+                </div>
+                <!-- Mask & flexbox options-->
 
-                </ul>
---}}
             </div>
-
         </div>
-    </nav>
-    <!-- Navbar -->
+        <!--/First slide-->
 
 
+    </div>
+    <!--/.Slides-->
 
-</header>
+
+</div>
+<!--/.Carousel Wrapper-->
 
 <!--Main layout-->
-<main>
-    <br>
+
     <div class="container">
 
         <!--Section: Main info-->
@@ -146,9 +74,13 @@
                         <div class="card-body">
 
                             <!-- Title -->
-                            <h4 class="card-title">Card title</h4>
+                            <h4 class="card-title">Co</h4>
                             <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="card-text">card title and make up the bulk of the card's content.</p>
+                            <canvas id="lineChart"></canvas>
+
+                            {{ $readings }}
+
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Button</a>
 
@@ -163,21 +95,7 @@
                 <!--Grid column-->
                 <div class="col-md-6 mb-4">
 
-                    <!-- Main heading
-                    <h3 class="h3 mb-3">Material Design for Bootstrap</h3>
-                    <p>This template is created with Material Design for Bootstrap (
-                      <strong>MDB</strong> ) framework.</p>
-                    <p>Read details below to learn more about MDB.</p>
 
-
-                    <hr>
-
-                    <p>
-                      <strong>400+</strong> material UI elements,
-                      <strong>600+</strong> material icons,
-                      <strong>74</strong> CSS animations, SASS files, templates, tutorials and many more.
-                      <strong>Free for personal and commercial use.</strong>
-                    </p>  -->
 
                     <!-- Card -->
                     <div class="card">
@@ -284,116 +202,21 @@
 
 
     </div>
-</main>
+
 <!--Main layout-->
 
-<!--Footer-->
-<footer class="page-footer text-center font-small mt-4 wow fadeIn">
-    <!-- Footer Links -->
-    <hr class="my-4">
-    <div class="container-fluid text-center text-md-center">
-
-
-        <!-- Grid row -->
-        <div class="row">
-
-            <!-- Grid column -->
-            <div class="col-md-6 mt-md-0 mt-3">
-
-
-                <!-- Content -->
-                <h5 class="text-uppercase">Accuair Web Application</h5>
-                <p>Air pollution  identification System.</p>
-
-
-            </div>
-            <!-- Grid column -->
-
-            <hr class="clearfix w-100 d-md-none pb-3">
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-                <div class="text-left">
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Useful Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">About Accuair</a>
-                        </li>
-                        <li>
-                            <a href="#!">Gas Pollution</a>
-                        </li>
-
-                    </ul>
-                </div>
-
-
-
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-3 mb-md-0 mb-3">
-                <div class="text-left">
-
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Find Us</h5>
-
-                    <ul class="list-unstyled">
-
-                        <li>
-                            <a href="https://dribbble.com/mdbootstrap" target="_blank">
-                                <i class="fab fa-google-plus-g mr-3"></i>Google Plus
-                            </a>
-
-                        </li>
-
-                        <li>
-                            <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-                                <i class="fab fa-facebook-f mr-3"></i>Facebook
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://twitter.com/MDBootstrap" target="_blank">
-                                <i class="fab fa-twitter mr-3"></i>Twitter
-                            </a>
-                        </li>
-
-
-
-
-                    </ul>
-                </div>
-
-            </div>
-            <!-- Grid column -->
-
-        </div>
-        <!-- Grid row -->
-
-    </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">
-        <a href="https://mdbootstrap.com/education/bootstrap/"> </a>
-    </div>
-    <!-- Copyright -->
-
-</footer>
-<!--/.Footer-->
+</body>
+@extends('layouts.footer')
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
-<script type="text/javascript" src="home/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/home/js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="home/js/popper.min.js"></script>
+<script type="text/javascript" src="/home/js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="home/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/home/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="home/js/mdb.min.js"></script>
+<script type="text/javascript" src="/home/js/mdb.min.js"></script>
 <!-- Initializations -->
 <script type="text/javascript">
     // Animations initialization
@@ -401,7 +224,76 @@
 
 </script>
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
+<script>
+    var lbls = [
+        @foreach($readings as $reading)
+            "{{ $reading->created_at }}",
+        @endforeach
+            ""
+    ];
+    lbls.pop();
+    console.log("Lables :");
+    console.log(lbls);
+
+    var data = [
+        @foreach($readings as $reading)
+            "{{ $reading->co }}",
+        @endforeach
+            ""
+    ];
+    data.pop();
+    console.log('data: '+data);
+
+    //co2
+    var data2 = [
+        @foreach($readings as $reading)
+            "{{ $reading->co2 }}",
+        @endforeach
+            ""
+    ];
+    data2.pop();
+    console.log('data2: '+data2);
+
+    //line
+    var ctxL = document.getElementById("lineChart").getContext('2d');
+    var myLineChart = new Chart(ctxL, {
+        type: 'line',
+        data: {
+            labels: lbls,
+            datasets: [{
+                label: "CO  Air quality level",
+                data: data,
+                backgroundColor: [
+                    'rgba(105, 0, 132, .2)',
+                ],
+                borderColor: [
+                    'rgba(200, 99, 132, .7)',
+                ],
+                borderWidth: 2
+            },
+                {
+                    label: "CO2  Air quality level",
+                    data: data2,
+                    backgroundColor: [
+                        'rgba(0, 137, 132, .2)',
+                    ],
+                    borderColor: [
+                        'rgba(0, 10, 130, .7)',
+                    ],
+                    borderWidth: 2
+                }
+            ]
+        },
+        options: {
+            responsive: true
+        }
+    });
+
+</script>
+
+
+
+{{--<script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 
@@ -475,8 +367,4 @@
             }())
         }]
     });
-</script>
-
-</body>
-
-</html>
+</script>--}}

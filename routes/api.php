@@ -21,7 +21,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
  Route::get('/test', function (Request $request){
 
-     return $request->headers;
+     return "a =".$request->a.", and b = ".$request->b;
  });
 
 

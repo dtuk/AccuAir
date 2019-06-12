@@ -15,10 +15,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/sensor', function () {
-    return view('sensor');
+
+Route::get('/getsensor', function () {
+    return view('getsensor');
 });
+
+Route::post('/sensor', 'ReadingController@report');
+
+
 
 Route::get('/map', function () {
     return view('map');
 });
+
+Route::get('/about',function(){
+    return view('  about.index');
+})->name('about.index');
+
+Route::get('/terms',function(){
+    return view('  terms.index');
+})->name('terms.index');

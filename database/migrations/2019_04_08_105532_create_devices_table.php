@@ -23,7 +23,7 @@ class CreateDevicesTable extends Migration
         });
 
         \Illuminate\Support\Facades\DB::table('devices')->insert([
-            'auth_code' => bcrypt('Kittya'),
+                'auth_code' => bcrypt('MQ135'),
             'owner_id' => 1,
             'placed_location'=>"matara",
             'type' => "AMC123"

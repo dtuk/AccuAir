@@ -35,19 +35,26 @@ class ReadingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    public function test(Request $request)
+    {
+        $a = $request->a;
+        $b = $request->b;
+    }
+
     public function store(Request $request)
     {
 
-        $device = Device::findOrFail($request->device_id);
+//        return $request->field1;
+        $device = Device::findOrFail($request->di); // di = device_id
 
-        if (Hash::check($request->auth_code, $device->auth_code)){
+        if (Hash::check($request->ac, $device->auth_code)){ //ac = auth_code
             $reading = new Reading;
-            $reading->device_id = $request->device_id;
-            $reading->location = $request->location;
+            $reading->device_id = $request->di;
+            $reading->location = $request->loc;
             $reading->co = $request->co;
             $reading->co2 = $request->co2;
             $reading->tem = $request->tem;
-            $reading->humidity = $request->humidity;
+            $reading->humidity = $request->hm; // hm = humidity
 
             $reading->save();
             if ($reading->id){
@@ -73,7 +80,7 @@ class ReadingController extends Controller
      */
     public function show(Reading $reading)
     {
-        //
+
     }
 
     /**
@@ -108,5 +115,13 @@ class ReadingController extends Controller
     public function destroy(Reading $reading)
     {
         //
+    }
+
+    public function report(Request $request)
+    {
+        $readings = Reading::where('device_id', "=", $request->device_id)
+            ->where('location', $request->location)
+            ->get();
+        return view('sensor', ['readings' => $readings]);
     }
 }
