@@ -35,3 +35,5 @@ Route::get('/about',function(){
 Route::get('/terms',function(){
     return view('  terms.index');
 })->name('terms.index');
+
+Route::get('/search','ReadingController@index');
