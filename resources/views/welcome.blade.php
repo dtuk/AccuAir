@@ -80,9 +80,9 @@
 
                 <!-- Main heading -->
                 <h3 class="h3 mb-3">How To Use This Web Application</h3>
-                <p>To get more information about a specific city, move your move over any of the
-                    the icon in the above map, then click to get the full air pollution historical data.
-                </p>
+                <p><li>To get more information about a specific city, move your move over any of the
+                    the icon in the above map</li> <li>Click to get the full air pollution historical data.</li>
+
                 <p>Our System is based on measurement of Carbon Dioxide(CO2), Carbon Monoxide(CO), Temperature,Humidity emissions.All measurements are based on hourly readings</p>
                 <!-- Main heading -->
 

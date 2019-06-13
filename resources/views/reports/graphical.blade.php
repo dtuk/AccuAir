@@ -9,14 +9,22 @@
             <!-- Area Chart -->
             <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">CO</h6>
+                    <div class="row mx-auto">
+                        <div class="col">
+                            CO <div class="squre1"></div>
+                        </div>
+                        <div class="col">
+                            CO2 <div class="squre2"></div>
+                        </div>
+                    </div>
+                    <h6 class="m-0 font-weight-bold text-primary"> </h6>
                 </div>
                 <div class="card-body">
                     <div class="chart-area">
                         <canvas id="myAreaChart"></canvas>
                     </div>
                     <hr>
-                    The Variation of CO levels
+                    <strong>The Variation of CO & CO2 PPM</strong>
                 </div>
             </div>
 
@@ -112,6 +120,8 @@
                     pointHitRadius: 10,
                     pointBorderWidth: 2,
                     data: data,
+
+
                 },
                     {
                         label: "CO2",

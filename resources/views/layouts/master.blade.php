@@ -18,6 +18,18 @@
 
     <!-- Custom styles for this template-->
     <link href="/css/sb-admin-2.min.css" rel="stylesheet">
+    <style>
+        .squre1 {
+            width: 40px;
+            height: 20px;
+            background: dodgerblue;
+        }
+        .squre2 {
+            width: 40px;
+            height: 20px;
+            background: red;
+        }
+    </style>
 
     @yield('styles')
 
