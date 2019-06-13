@@ -16,7 +16,9 @@ class ReadingController extends Controller
      */
     public function index()
     {
-        //
+
+        $arr_ip = geoip()->getLocation('123.231.124.214');
+        dd($arr_ip);
     }
 
     /**

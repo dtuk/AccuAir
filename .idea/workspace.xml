@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11a55d5b-65ca-4ace-9525-01b41a12127f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reports/getgraphical.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/getgraphical.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reports/graphical.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/graphical.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reports/textual.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/textual.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="11a55d5b-65ca-4ace-9525-01b41a12127f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +86,10 @@
         <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="177">
-              <caret line="23" column="116" selection-start-line="23" selection-start-column="116" selection-end-line="23" selection-end-column="116" />
+              <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -104,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/resources/views/sensor.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1214">
-              <caret line="283" column="34" lean-forward="true" selection-start-line="280" selection-start-column="19" selection-end-line="283" selection-end-column="34" />
+              <caret line="283" column="34" selection-start-line="280" selection-start-column="19" selection-end-line="283" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -430,18 +424,17 @@
       <workItem from="1560301713764" duration="16712000" />
       <workItem from="1560356191500" duration="18308000" />
       <workItem from="1560390764310" duration="1546000" />
-      <workItem from="1560397195078" duration="3123000" />
+      <workItem from="1560397195078" duration="3364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124891000" />
+    <option name="totallyTimeSpent" value="125132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26928896" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26928896" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -456,7 +449,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.29787233" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" visible="true" weight="0.29787233" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" visible="true" weight="0.29787233" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -655,7 +648,7 @@
     <entry file="file://$PROJECT_DIR$/resources/views/sensor.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1214">
-          <caret line="283" column="34" lean-forward="true" selection-start-line="280" selection-start-column="19" selection-end-line="283" selection-end-column="34" />
+          <caret line="283" column="34" selection-start-line="280" selection-start-column="19" selection-end-line="283" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -707,7 +700,10 @@
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
-          <caret line="23" column="116" selection-start-line="23" selection-start-column="116" selection-end-line="23" selection-end-column="116" />
+          <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
