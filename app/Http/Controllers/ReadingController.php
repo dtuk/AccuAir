@@ -48,15 +48,23 @@ class ReadingController extends Controller
         $device = Device::findOrFail($request->di); // di = device_id
 
         if (Hash::check($request->ac, $device->auth_code)){ //ac = auth_code
+
+
+
             $reading = new Reading;
             $reading->device_id = $request->di;
-            $reading->location = $request->loc;
+            $reading->lat = $request->lat;
+            $reading->lng = $request->lng;
             $reading->co = $request->co;
             $reading->co2 = $request->co2;
             $reading->tem = $request->tem;
             $reading->humidity = $request->hm; // hm = humidity
 
+
             $reading->save();
+
+
+
             if ($reading->id){
                 return response(['status' => 1]);
             }

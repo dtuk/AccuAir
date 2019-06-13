@@ -35,3 +35,15 @@ Route::get('/about',function(){
 Route::get('/terms',function(){
     return view('  terms.index');
 })->name('terms.index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/reports/graphioal', 'HomeController@getGraphical');
+
+Route::post('/reports/graphical', 'HomeController@graphical');
+
+Route::post('/reports/textual', 'HomeController@textual');
+
+Route::get('/reports/textual', 'HomeController@getTextual');

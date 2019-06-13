@@ -19,7 +19,7 @@
                             <h1 class="mb-4">
                                 <strong>Accuair</strong>
                             </h1>
-                            <div class="center"> <img src="/home/img/newlogo.png" width="100px" height="100px" alt="accuair"></div>
+                            <div class="center"> <img src="/welcome/img/newlogo.png" width="100px" height="100px" alt="accuair"></div>
 
 
                             <p>
@@ -53,9 +53,9 @@
 
 
 
-<br>
-<hr>
-<div id="map"></div>
+{{--<br>--}}
+{{--<hr>--}}
+{{--<div id="map"></div>--}}
 <div class="container">
 
 
@@ -69,7 +69,7 @@
             <!--Grid column-->
             <div class="col-md-6 mb-4">
 
-                <img src="home/img/Screenshot.png" class="img-fluid z-depth-1-half"
+                <img src="/welcome/img/Screenshot.png" class="img-fluid z-depth-1-half"
                      alt="">
 
             </div>
@@ -314,7 +314,7 @@
     function initAutocomplete() {
         var map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: 7.873054, lng: 80.771797},
-            zoom: 7.5,
+            zoom: 8.5,
             mapTypeId: 'roadmap'
         });
 
@@ -326,6 +326,10 @@
         // Bias the SearchBox results towards current map's viewport.
         map.addListener('bounds_changed', function() {
             searchBox.setBounds(map.getBounds());
+        });
+
+        map.addListener('click', function(e) {
+            console.log("lat: "+e.latLng.lat()+", long: "+e.latLng.lng());
         });
 
         var markers = [];
@@ -366,6 +370,8 @@
                     title: place.name,
                     position: place.geometry.location
                 }));
+
+
 
                 if (place.geometry.viewport) {
                     // Only geocodes have viewport.

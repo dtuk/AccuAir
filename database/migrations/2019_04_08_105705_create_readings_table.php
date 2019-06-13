@@ -16,7 +16,8 @@ class CreateReadingsTable extends Migration
         Schema::create('readings', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('device_id');
-            $table->string('location');
+            $table->decimal('lat', 8,5);
+            $table->decimal('lng', 8,5);
             $table->string('co')->nullable();
             $table->string('co2')->nullable();
             $table->string('tem')->nullable();

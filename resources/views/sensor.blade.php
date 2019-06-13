@@ -17,7 +17,7 @@
                         <h1 class="mb-4">
                             <strong>Accuair</strong>
                         </h1>
-                        <div class="center"> <img src="/home/img/newlogo.png" width="100px" height="100px" alt="accuair"></div>
+                        <div class="center"> <img src="/welcome/img/newlogo.png" width="100px" height="100px" alt="accuair"></div>
 
 
                         <p>
@@ -58,7 +58,7 @@
             <div class="row">
 
                 <!--Grid column-->
-                <div class="col-md-6 mb-4">
+                {{--<div class="col-md-6 mb-4">--}}
 
                     <!-- Card -->
                     <div class="card">
@@ -79,7 +79,7 @@
                             <p class="card-text">card title and make up the bulk of the card's content.</p>
                             <canvas id="lineChart"></canvas>
 
-                            {{ $readings }}
+
 
                             <!-- Button -->
                             <a href="#" class="btn btn-primary">Button</a>
@@ -92,110 +92,110 @@
                 </div>
                 <!--Grid column-->
 
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
+                {{--<!--Grid column-->--}}
+                {{--<div class="col-md-6 mb-4">--}}
 
 
 
-                    <!-- Card -->
-                    <div class="card">
+                    {{--<!-- Card -->--}}
+                    {{--<div class="card">--}}
 
-                        <!-- Card image -->
-                        <div class="view overlay">
-                            <div id="container"></div>
-                                <div class="mask rgba-white-slight"></div>
+                        {{--<!-- Card image -->--}}
+                        {{--<div class="view overlay">--}}
+                            {{--<div id="container"></div>--}}
+                                {{--<div class="mask rgba-white-slight"></div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <!-- Card content -->
-                        <div class="card-body">
+                        {{--<!-- Card content -->--}}
+                        {{--<div class="card-body">--}}
 
-                            <!-- Title -->
-                            <h4 class="card-title">Card title</h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
+                            {{--<!-- Title -->--}}
+                            {{--<h4 class="card-title">Card title</h4>--}}
+                            {{--<!-- Text -->--}}
+                            {{--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
+                            {{--<!-- Button -->--}}
+                            {{--<a href="#" class="btn btn-primary">Button</a>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
-                    <!-- Card -->
+                    {{--</div>--}}
+                    {{--<!-- Card -->--}}
 
-                </div>
-                <!--Grid column-->
+                {{--</div>--}}
+                {{--<!--Grid column-->--}}
 
             </div>
             <!--Grid row-->
 
-            <!--Grid row-->
-            <div class="row">
+            {{--<!--Grid row-->--}}
+            {{--<div class="row">--}}
 
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
+                {{--<!--Grid column-->--}}
+                {{--<div class="col-md-6 mb-4">--}}
 
-                    <!-- Card -->
-                    <div class="card">
+                    {{--<!-- Card -->--}}
+                    {{--<div class="card">--}}
 
-                        <!-- Card image -->
-                        <div class="view overlay">
-                                <div id="container"></div>
-                                <div class="mask rgba-white-slight"></div>
+                        {{--<!-- Card image -->--}}
+                        {{--<div class="view overlay">--}}
+                                {{--<div id="container"></div>--}}
+                                {{--<div class="mask rgba-white-slight"></div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <!-- Card content -->
-                        <div class="card-body">
+                        {{--<!-- Card content -->--}}
+                        {{--<div class="card-body">--}}
 
-                            <!-- Title -->
-                            <h4 class="card-title">Card title</h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
+                            {{--<!-- Title -->--}}
+                            {{--<h4 class="card-title">Card title</h4>--}}
+                            {{--<!-- Text -->--}}
+                            {{--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
+                            {{--<!-- Button -->--}}
+                            {{--<a href="#" class="btn btn-primary">Button</a>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
-                    <!-- Card -->
+                    {{--</div>--}}
+                    {{--<!-- Card -->--}}
 
-                </div>
-                <!--Grid column-->
+                {{--</div>--}}
+                {{--<!--Grid column-->--}}
 
-                <!--Grid column-->
-                <div class="col-md-6 mb-4">
+                {{--<!--Grid column-->--}}
+                {{--<div class="col-md-6 mb-4">--}}
 
 
-                    <!-- Card -->
-                    <div class="card">
+                    {{--<!-- Card -->--}}
+                    {{--<div class="card">--}}
 
-                        <!-- Card image -->
-                        <div class="view overlay">
-                                <div id="container"></div>
-                                <div class="mask rgba-white-slight"></div>
+                        {{--<!-- Card image -->--}}
+                        {{--<div class="view overlay">--}}
+                                {{--<div id="container"></div>--}}
+                                {{--<div class="mask rgba-white-slight"></div>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                        <!-- Card content -->
-                        <div class="card-body">
+                        {{--<!-- Card content -->--}}
+                        {{--<div class="card-body">--}}
 
-                            <!-- Title -->
-                            <h4 class="card-title">Card title</h4>
-                            <!-- Text -->
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <!-- Button -->
-                            <a href="#" class="btn btn-primary">Button</a>
+                            {{--<!-- Title -->--}}
+                            {{--<h4 class="card-title">Card title</h4>--}}
+                            {{--<!-- Text -->--}}
+                            {{--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>--}}
+                            {{--<!-- Button -->--}}
+                            {{--<a href="#" class="btn btn-primary">Button</a>--}}
 
-                        </div>
+                        {{--</div>--}}
 
-                    </div>
-                    <!-- Card -->
+                    {{--</div>--}}
+                    {{--<!-- Card -->--}}
 
-                </div>
-                <!--Grid column-->
+                {{--</div>--}}
+                {{--<!--Grid column-->--}}
 
-            </div>
-            <!--Grid row-->
+            {{--</div>--}}
+            {{--<!--Grid row-->--}}
 
         </section>
         <!--Section: Main info-->
@@ -210,13 +210,13 @@
 
 <!-- SCRIPTS -->
 <!-- JQuery -->
-<script type="text/javascript" src="/home/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/welcome/js/jquery-3.3.1.min.js"></script>
 <!-- Bootstrap tooltips -->
-<script type="text/javascript" src="/home/js/popper.min.js"></script>
+<script type="text/javascript" src="/welcome/js/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="/home/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/welcome/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
-<script type="text/javascript" src="/home/js/mdb.min.js"></script>
+<script type="text/javascript" src="/welcome/js/mdb.min.js"></script>
 <!-- Initializations -->
 <script type="text/javascript">
     // Animations initialization
@@ -260,7 +260,8 @@
         type: 'line',
         data: {
             labels: lbls,
-            datasets: [{
+            datasets: [
+                {
                 label: "CO  Air quality level",
                 data: data,
                 backgroundColor: [
