@@ -46,9 +46,10 @@
         <!-- Sidebar - Brand -->
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
             <div class="sidebar-brand-icon rotate-n-15">
-                <img src="/welcome/img/newlogo.png" width="50px" height="50px" alt="accuair">
+                <!-- <img src="/welcome/img/newlogo.png" width="50px" height="50px" alt="accuair"> -->
             </div>
             <div class="sidebar-brand-text mx-3">AccuAir </div>
+            
         </a>
 
         <!-- Divider -->
@@ -70,7 +71,7 @@
         <li class="nav-item">
             <a class="nav-link" href="/reports/textual">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Texual Reports</span></a>
+                <span>Textual Reports</span></a>
         </li>
 
         <li class="nav-item">
@@ -331,9 +332,11 @@
                             {{--<a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>--}}
                         {{--</div>--}}
                     {{--</li>--}}
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/products') }}" target="_blank">Order device </a>
+                    </li>
                     <div class="topbar-divider d-none d-sm-block"></div>
-
+                   
                     <!-- Nav Item - User Information -->
                     <li class="nav-item dropdown no-arrow">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -375,8 +378,7 @@
             <!-- Begin Page Content -->
             <div class="container-fluid">
 
-                <!-- Page Heading -->
-                {{--<h1 class="h3 mb-4 text-gray-800">Blank Page</h1>--}}
+               
 
                 @yield('content')
 

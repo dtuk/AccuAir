@@ -169,9 +169,9 @@
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('about.index')}}" target="_blank">Our measurements</a>
-                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="{{ route('about.index')}}" target="_blank">Order device </a>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('terms.index')}}" target="_blank">Terms & Conditions</a>
                     </li>

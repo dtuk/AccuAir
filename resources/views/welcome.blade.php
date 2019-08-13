@@ -79,16 +79,60 @@
             <div class="col-md-6 mb-4">
 
                 <!-- Main heading -->
-                <h3 class="h3 mb-3">How To Use This Web Application</h3>
-                <p><li>To get more information about a specific city, move your move over any of the
-                    the icon in the above map</li> <li>Click to get the full air pollution historical data.</li>
+                <h3 class="h3 mb-3">How To Use This Web Application</h3><br>
+               
+                <ul style="list-style: none; ">
+                <li>
+                 <!--Grid row-->
+                  <div class="row">
+                    <div class="col-2">
+                      <i class="fas fa-sign-in-alt fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-10 mb-2 pl-3">
+                      <h5 class="feature-title font-bold mb-1">Login or signup our web site. </h5>
+                
+                    </div>
+                  </div>
+                <!--/Grid row-->
+                </li> <br>
 
-                <p>Our System is based on measurement of Carbon Dioxide(CO2), Carbon Monoxide(CO), Temperature,Humidity emissions.All measurements are based on hourly readings</p>
-                <!-- Main heading -->
+                <li>
+                 <!--Grid row-->
+                 <div class="row">
+                    <div class="col-2">
+                      <i class="fas fa-map-marker-alt fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-10 mb-2 pl-3">
+                      <h5 class="feature-title font-bold mb-1">Select specific city, from any of the icon in map </h5>
+                
+                    </div>
+                  </div>
+                <!--/Grid row-->
+                </li><br>
+
+
+                <li>
+                 <!--Grid row-->
+                 <div class="row">
+                    <div class="col-2">
+                      <i class="fas fa-mouse-pointer fa-2x mb-1 indigo-text" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-10 mb-2 pl-3">
+                      <h5 class="feature-title font-bold mb-1">Click to get the full air pollution historical data. </h5>
+                
+                    </div>
+                  </div>
+                <!--/Grid row-->
+                </li><br>
+
+                </ul>
+
+                <p>Our System is based on measurement of <b>Carbon Dioxide(CO2)</b>,<b> Carbon Monoxide(CO)</b>, <b>Temperature</b>, <b>Humidity</b> emissions.All measurements are based on hourly readings</p>
+              
 
                 <hr>
 
-
+   
 
             </div>
             <!--Grid column-->

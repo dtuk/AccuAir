@@ -50,3 +50,16 @@ Route::post('/reports/textual', 'HomeController@textual');
 Route::get('/reports/textual', 'HomeController@getTextual');
 
 Route::get('/search','ReadingController@index');
+
+Route::get('/products', 'ProductsController@index');
+ 
+Route::get('cart', 'ProductsController@cart');
+ 
+Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
+
+Route::patch('update-cart', 'ProductsController@update');
+ 
+Route::delete('remove-from-cart', 'ProductsController@remove');
+    
+Route::get('stripe', 'StripePaymentController@stripe');
+Route::post('stripe', 'StripePaymentController@stripePost')->name('stripe.post');
