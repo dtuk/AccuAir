@@ -91,3 +91,5 @@ Route::get('/admin',function(){
     return view('  admin.allorder');
 });
 
+
+Route::resource('key', 'KeyController');

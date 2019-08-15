@@ -35,3 +35,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
  Route::post('/login', 'MobileAppController@login');
 
  Route::post('/getdata', 'MobileAppController@getdata');
+
+ Route::post('/data', 'KeyController@data');
