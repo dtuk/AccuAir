@@ -47,8 +47,8 @@ class MobileAppController extends Controller
 
 //        DB::enableQueryLog(); // Enable query log
 
-        $readings = Reading::whereBetween('lat', [$lat - 100, $lat + 100])
-            ->whereBetween('lng', [$lng - 100, $lng + 100])
+        $readings = Reading::whereBetween('lat', [$lat - 0.1, $lat + 0.1])
+            ->whereBetween('lng', [$lng - 0.1, $lng + 0.1])
             ->whereRaw("`created_at` >= STR_TO_DATE('$from', '%Y-%m-%d %H:%i:%s')")
             ->whereRaw("`created_at` <= STR_TO_DATE('$to', '%Y-%m-%d %H:%i:%s')")
 //            ->whereRaw("Date(`created_at`) BETWEEN '$from' and '$to ")

@@ -99,8 +99,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileAppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="63" column="47" lean-forward="true" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+            <state relative-caret-position="272">
+              <caret line="62" column="10" selection-start-line="62" selection-start-column="8" selection-end-line="63" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -343,7 +343,7 @@
       <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -515,16 +515,15 @@
       <workItem from="1565833905189" duration="1507000" />
       <workItem from="1565843358570" duration="3066000" />
       <workItem from="1565847718120" duration="9002000" />
-      <workItem from="1565874621526" duration="4469000" />
+      <workItem from="1565874621526" duration="4717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187108000" />
+    <option name="totallyTimeSpent" value="187356000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20726173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -899,8 +898,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileAppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="63" column="47" lean-forward="true" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
+        <state relative-caret-position="272">
+          <caret line="62" column="10" selection-start-line="62" selection-start-column="8" selection-end-line="63" selection-end-column="47" />
         </state>
       </provider>
     </entry>
