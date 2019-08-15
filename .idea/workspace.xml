@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11a55d5b-65ca-4ace-9525-01b41a12127f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/css/style2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/allorder.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StripePaymentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/sb-admin-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/sb-admin-2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/sb-admin-2.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/sb-admin-2.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/customer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/customer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/layout2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/products.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reports/graphical.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/graphical.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/reports/textual.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/reports/textual.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/stripe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/stripe.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MobileAppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MobileAppController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +27,8 @@
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.68" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.69" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -50,7 +36,7 @@
           <entry key="css" value="6" />
           <entry key="env" value="1" />
           <entry key="json" value="1" />
-          <entry key="php" value="56" />
+          <entry key="php" value="57" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -59,20 +45,20 @@
           <entry key="Blade" value="34" />
           <entry key="CSS" value="6" />
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="22" />
+          <entry key="PHP" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1" />
-          <entry key="php" value="2261" />
+          <entry key="php" value="2293" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Blade" value="951" />
           <entry key="CSS" value="1" />
-          <entry key="PHP" value="1310" />
+          <entry key="PHP" value="1342" />
         </counts>
       </usages-collector>
     </session>
@@ -91,7 +77,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/customer.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="629">
               <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
             </state>
           </provider>
@@ -107,6 +93,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileAppController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -167,7 +162,6 @@
         <option value="$PROJECT_DIR$/resources/views/reports/getgraphical.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/layout.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/MobileAppController.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/resources/views/layouts/layout2.blade.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_13_162810_create_orders_table.php" />
@@ -188,6 +182,7 @@
         <option value="$PROJECT_DIR$/resources/views/reports/graphical.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/customer.blade.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MobileAppController.php" />
       </list>
     </option>
   </component>
@@ -306,7 +301,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -388,6 +382,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -460,17 +455,19 @@
       <workItem from="1565762104889" duration="12881000" />
       <workItem from="1565780183662" duration="1996000" />
       <workItem from="1565807076378" duration="3866000" />
-      <workItem from="1565833905189" duration="897000" />
+      <workItem from="1565833905189" duration="1507000" />
+      <workItem from="1565843358570" duration="489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169961000" />
+    <option name="totallyTimeSpent" value="171060000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20121029" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -485,7 +482,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.29787233" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49924356" visible="true" weight="0.08852459" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -605,13 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="83" selection-start-line="23" selection-start-column="83" selection-end-line="23" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileAppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -800,6 +790,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/customer.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/reports/getgraphical.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -807,10 +804,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/customer.blade.php">
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        <state relative-caret-position="187">
+          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -821,10 +818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MobileAppController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="395">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
         </state>
       </provider>
     </entry>

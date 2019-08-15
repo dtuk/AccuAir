@@ -47,6 +47,7 @@ class MobileAppController extends Controller
         $readings = Reading::whereBetween('lat', [$lat - 100, $lat + 100])
             ->whereBetween('lng', [$lng - 100, $lng + 100])
             ->whereBetween('created_at', [$from, $to])
+            ->orderBy('created_at', 'desc')
             ->get();
 
         if (count($readings) > 0){
