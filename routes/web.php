@@ -71,11 +71,13 @@ Route::get('stripe', 'StripePaymentController@stripe')->name('stripe');
 Route::post('stripe', 'StripePaymentController@stripePost')->name('stripe.post');
 
 Route::get('invoices', function (){
+    \Stripe\Stripe::setApiKey('sk_test_cQLq5PIwrddJM7RV6drAZKLs00k57KiueJ');
     $invoices = auth()->user()->invoices();
     return view('invoices', ['invoices' => $invoices]);
 });
 
 Route::get('user/invoice/{invoice}', function (\Illuminate\Http\Request $request, $invoiceId) {
+    \Stripe\Stripe::setApiKey('sk_test_cQLq5PIwrddJM7RV6drAZKLs00k57KiueJ');
     return $request->user()->downloadInvoice($invoiceId, [
         'vendor'  => 'AccuAir',
         'product' => 'AccuAir - Air Quality Monitoring system',
