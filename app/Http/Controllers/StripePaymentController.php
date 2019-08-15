@@ -46,5 +46,9 @@ class StripePaymentController extends Controller
   
         Session::flash('success', 'Payment successful!');
 
-        return redirect()->to('/products');    }
+        $invoices = auth()->user()->invoices();
+        return view('invoices', ['invoices' => $invoices]);
+
+//        return redirect()->to('/products');
+    }
 }
