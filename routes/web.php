@@ -67,9 +67,25 @@ Route::patch('update-cart', 'ProductsController@update');
  
 Route::delete('remove-from-cart', 'ProductsController@remove');
     
-Route::get('stripe', 'StripePaymentController@stripe');
+Route::get('stripe', 'StripePaymentController@stripe')->name('stripe');
 Route::post('stripe', 'StripePaymentController@stripePost')->name('stripe.post');
 
+Route::get('invoices', function (){
+    $invoices = auth()->user()->invoices();
+    return view('invoices', ['invoices' => $invoices]);
+});
+
+Route::get('user/invoice/{invoice}', function (\Illuminate\Http\Request $request, $invoiceId) {
+    return $request->user()->downloadInvoice($invoiceId, [
+        'vendor'  => 'AccuAir',
+        'product' => 'AccuAir - Air Quality Monitoring system',
+    ]);
+});
+
+
 Route::get('/admin',function(){
-    return view('  admin.allorder');});
+
+
+    return view('  admin.allorder');
+});
 

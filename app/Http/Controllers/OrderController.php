@@ -28,14 +28,20 @@ class OrderController extends Controller
 
         ]);
 
+        $quantity = 0;
+        foreach (session()->get('cart') as $i => $cart){
+            $quantity += (int) $cart['quantity'];
+        }
+
         $order = new Order;
         $order->user_id = auth()->user()->id;
         $order->name = $request->name;
         $order->address = $request->address;
         $order->number = $request->number;
+        $order->quantity = $quantity;
 
         $order->save();
-        return redirect()->to('/stripe');
+        return view('stripe')->with('order', $order);
 
 
     }

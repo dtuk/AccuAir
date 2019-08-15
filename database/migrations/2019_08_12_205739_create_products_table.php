@@ -21,6 +21,15 @@ class CreateProductsTable extends Migration
             $table->decimal("price", 6, 2);
             $table->timestamps();
         });
+
+        \Illuminate\Support\Facades\DB::table('products')->insert([
+            [
+                'name' => "Air quality identification system",
+                "description" => "Air quality identification system",
+                "photo" => "/img/product1.jpg",
+                "price" => "48",
+            ],
+        ]);
     }
 
     /**

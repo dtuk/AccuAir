@@ -20,6 +20,8 @@ class CreateOrdersTable extends Migration
             $table->string('name');
             $table->string('address');
             $table->string('number');
+            $table->integer('quantity')->default(0);
+            $table->smallInteger('status')->default(0); //0 - pending payment, 1 - paid, 2 - Completed (Shipped)
             $table->timestamps();
         });
     }

@@ -54,7 +54,9 @@
                                                     data-stripe-publishable-key="{{ env('STRIPE_KEY') }}"
                                                     id="payment-form">
                         @csrf
-  
+
+                        <input type="hidden" name="order_id" value="{{ $order->id }}">
+
                         <div class='form-row row'>
                             <div class='col-xs-12 form-group required'>
                                 <label class='control-label'>Name on Card</label> <input
