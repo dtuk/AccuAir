@@ -23,7 +23,7 @@
 
 
                             <p>
-                                <h4>"Just Breathing Can Be Such a luxury Somethings"</h4>
+                                <h4>"Just Breathing Can Be Such a luxury Sometimes"</h4>
                             </p>
 
                             {{--<p class="mb-4 d-none d-md-block">--}}
@@ -94,7 +94,7 @@
                     </div>
                   </div>
                 <!--/Grid row-->
-                </li> <br>
+                </li> <br><br>
 
                 <li>
                  <!--Grid row-->
@@ -289,12 +289,6 @@
 
                 <ul class="list-unstyled">
 
-                    <li>
-                        <a href="https://dribbble.com/mdbootstrap" target="_blank">
-                            <i class="fab fa-google-plus-g mr-3"></i>Google Plus
-                        </a>
-
-                    </li>
 
                     <li>
                         <a href="https://www.facebook.com/mdbootstrap" target="_blank">

@@ -54,6 +54,17 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="row">
+
+            <div class="col"><h5>CO continuous expoure safty level in PPM</h5></div>
+            <div class="col"><h5>CO<sub>2</sub> continuous expoure safty level in PPM</h5></div>
+            <div class="w-100"></div>
+
+            <div class="col"><img src="/img/co.png" alt="co" height="300px" width="500px"></div>
+            <div class="col"><img src="/img/co2.png" alt="co2" height="300px" width="500px"></div>
+        </div>
+    </div>
 
 @endsection
 

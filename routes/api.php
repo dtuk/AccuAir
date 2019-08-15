@@ -17,6 +17,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+ Route::get('/read', 'ReadingController@store');
+
  Route::post('/read', 'ReadingController@store');
 
  Route::get('/test', function (Request $request){

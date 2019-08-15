@@ -15,8 +15,8 @@
     <!-- Custom fonts for this template-->
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/style2.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom styles for this template-->
     <link href="/css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -24,16 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <style>
-        .squre1 {
-            width: 40px;
-            height: 20px;
-            background: dodgerblue;
-        }
-        .squre2 {
-            width: 40px;
-            height: 20px;
-            background: red;
-        }
+
     </style>
 
     @yield('styles')
@@ -147,10 +138,11 @@
              <div class="container-fluid">
              <div class="container">
 
+
           <div class="row">
              <div class="col-lg-12 col-sm-12 col-12 main-section">
             <div class="dropdown">
-                <button type="button" class="btn btn-info" data-toggle="dropdown">
+                <button type="button" class="btn btn-primary" data-toggle="dropdown">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart <span class="badge badge-pill badge-danger">{{ count((array)session('cart')) }}</span>
                 </button>
                 <div class="dropdown-menu">
@@ -180,11 +172,12 @@
                                     <span class="price text-info"> ${{ $details['price'] }}</span> <span class="count"> Quantity:{{ $details['quantity'] }}</span>
                                 </div>
                             </div>
+
                         @endforeach
                     @endif
                     <div class="row">
                         <div class="col-lg-12 col-sm-12 col-12 text-center checkout">
-                            <a href="{{ url('cart') }}" class="btn btn-primary btn-block">View all</a>
+                            <a href="{{ url('cart') }}" class="btn btn-primary btn-block">Continue to payment</a>
                         </div>
                     </div>
                 </div>
@@ -246,7 +239,7 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="/vendor/jquery/jquery.min.js"></script>
+{{--<script src="/vendor/jquery/jquery.min.js"></script>--}}
 <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->

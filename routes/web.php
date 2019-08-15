@@ -47,6 +47,12 @@ Route::post('/reports/graphical', 'HomeController@graphical');
 
 Route::post('/reports/textual', 'HomeController@textual');
 
+Route::post('/store', 'OrderController@store');
+
+Route::get('/customer', 'OrderController@post');
+
+
+
 Route::get('/reports/textual', 'HomeController@getTextual');
 
 Route::get('/search','ReadingController@index');
@@ -63,3 +69,7 @@ Route::delete('remove-from-cart', 'ProductsController@remove');
     
 Route::get('stripe', 'StripePaymentController@stripe');
 Route::post('stripe', 'StripePaymentController@stripePost')->name('stripe.post');
+
+Route::get('/admin',function(){
+    return view('  admin.allorder');});
+

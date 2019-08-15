@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Laravel 5 - Stripe Payment Gateway Integration Example - ItSolutionStuff.com</title>
+	<title>payment for device</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
 
  
@@ -28,8 +28,7 @@
   
 <div class="container">
   
-    <h1>Laravel 5 - Stripe Payment Gateway Integration Example <br/> ItSolutionStuff.com</h1>
-  
+<br><br><br><br>
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-default credit-card-box">
@@ -106,8 +105,11 @@
                           
                     </form>
                 </div>
-            </div>        
+            </div>
+            <td><a href="{{ url('/customer') }}" class="btn btn-primary"><i class="fa fa-angle-left"></i> Back to your details</a></td>
+
         </div>
+
     </div>
       
 </div>
@@ -141,7 +143,7 @@ $(function() {
   
     if (!$form.data('cc-on-file')) {
       e.preventDefault();
-      Stripe.setPublishableKey($form.data('stripe-publishable-key'));
+      Stripe.setPublishableKey('pk_test_9wzbhYDuavIle7PkyyPyAJpb008ie0OPCq');
       Stripe.createToken({
         number: $('.card-number').val(),
         cvc: $('.card-cvc').val(),

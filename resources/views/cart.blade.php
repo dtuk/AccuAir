@@ -1,5 +1,5 @@
 
-@extends('layouts.layout2')
+@extends('layout2')
 
 
  @section('title', 'Cart')
@@ -50,13 +50,14 @@
          </tbody>
          <tfoot>
          <tr class="visible-xs">
-             <td class="text-center"><strong>Total {{ $total }}</strong></td>
+             <td class="text-center"><strong>Total $ {{ $total }}</strong></td>
          </tr>
          <tr>
-             <td><a href="{{ url('/products') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
+             <td><a href="{{ url('/products') }}" class="btn btn-primary"><i class="fa fa-angle-left"></i> Continue Shopping</a></td>
              <td colspan="2" class="hidden-xs"></td>
-             <td><a href="{{ url('/stripe') }}" class="btn btn-warning"> <strong>Pay ${{ $total }}</strong><i class="fa fa-angle-right"></i></a>
-             
+             {{--<td><a href="{{ url('/stripe') }}" class="btn btn-warning"> <strong>Pay ${{ $total }}</strong><i class="fa fa-angle-right"></i></a>--}}
+             <td><a href="{{ url('/customer') }}" class="btn btn-primary"> <strong>Go to payment</strong><i class="fa fa-angle-right"></i></a>
+
          </tr>
          </tfoot>
      </table>

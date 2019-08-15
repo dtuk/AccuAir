@@ -14,7 +14,7 @@
                             CO <div class="squre1"></div>
                         </div>
                         <div class="col">
-                            CO2 <div class="squre2"></div>
+                            CO<sub>2</sub> <div class="squre2"></div>
                         </div>
                     </div>
                     <h6 class="m-0 font-weight-bold text-primary"> </h6>
@@ -24,10 +24,20 @@
                         <canvas id="myAreaChart"></canvas>
                     </div>
                     <hr>
-                    <strong>The Variation of CO & CO2 PPM</strong>
+                    <strong>The Variation of CO & CO<sub>2</sub> PPM</strong>
                 </div>
             </div>
+            <div class="container">
+                <div class="row">
 
+                    <div class="col"><h5>CO continuous expoure safty level in PPM</h5></div>
+                    <div class="col"><h5>CO<sub>2</sub> continuous expoure safty level in PPM</h5></div>
+                    <div class="w-100"></div>
+
+                    <div class="col"><img src="/img/co.png" alt="co" height="300px" width="500px"></div>
+                    <div class="col"><img src="/img/co2.png" alt="co2" height="300px" width="500px"></div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -108,10 +118,10 @@
                 labels: lbls,
                 datasets: [{
                     label: "CO",
-                    lineTension: 0.3,
+                    lineTension: 0.1,
                     backgroundColor: "rgba(78, 115, 223, 0.05)",
                     borderColor: "rgba(78, 115, 223, 1)",
-                    pointRadius: 3,
+                    pointRadius: 2,
                     pointBackgroundColor: "rgba(78, 115, 223, 1)",
                     pointBorderColor: "rgba(78, 115, 223, 1)",
                     pointHoverRadius: 3,
@@ -125,10 +135,10 @@
                 },
                     {
                         label: "CO2",
-                        lineTension: 0.3,
+                        lineTension: 0.1,
                         backgroundColor: "rgba(217, 30, 24, 0.05)",
                         borderColor: "rgba(217, 30, 24, 1)",
-                        pointRadius: 3,
+                        pointRadius: 2,
                         pointBackgroundColor: "rgba(217, 30, 24, 1)",
                         pointBorderColor: "rgba(217, 30, 24, 1)",
                         pointHoverRadius: 3,
@@ -165,7 +175,7 @@
                     }],
                     yAxes: [{
                         ticks: {
-                            maxTicksLimit: 5,
+                            maxTicksLimit: 100,
                             padding: 10,
                             // Include a dollar sign in the ticks
                             callback: function(value, index, values) {
