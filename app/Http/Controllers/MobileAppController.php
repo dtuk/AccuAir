@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Reading;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class MobileAppController extends Controller
@@ -40,15 +41,28 @@ class MobileAppController extends Controller
             $to = date($data['to']);
         }
         else{
-            $to = date('Y-m-d h:i:s');
+            $to = date('Y-m-d H:i:s');
         }
 
 
+//        DB::enableQueryLog(); // Enable query log
+
         $readings = Reading::whereBetween('lat', [$lat - 100, $lat + 100])
             ->whereBetween('lng', [$lng - 100, $lng + 100])
-            ->whereBetween('created_at', [$from, $to])
-            ->orderBy('created_at', 'desc')
+            ->whereRaw("`created_at` >= STR_TO_DATE('$from', '%Y-%m-%d %H:%i:%s')")
+            ->whereRaw("`created_at` <= STR_TO_DATE('$to', '%Y-%m-%d %H:%i:%s')")
+//            ->whereRaw("Date(`created_at`) BETWEEN '$from' and '$to ")
+//            ->whereRaw('Date(created_at) <= CURDATE()')
+//            ->whereRaw('Date(created_at) >= '."'$to'")
+//            ->whereDate('created_at', '>=', "'$from'")
+//            ->whereDate('created_at', '>=', $to)
+//            ->whereBetween('created_at', ["'$from'", "'$to'"])
+            ->latest()
             ->get();
+
+        /*dd(str_replace_array('?', \DB::getQueryLog()[0]['bindings'],
+            \DB::getQueryLog()[0]['query']));*/
+
 
         if (count($readings) > 0){
             return response(['status' => 1, 'readings' => $readings], 200);
