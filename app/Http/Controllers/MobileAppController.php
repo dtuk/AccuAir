@@ -45,7 +45,7 @@ class MobileAppController extends Controller
         }
 
 
-        DB::enableQueryLog(); // Enable query log
+//        DB::enableQueryLog(); // Enable query log
 
         $readings = Reading::whereBetween('lat', [$lat - 100, $lat + 100])
             ->whereBetween('lng', [$lng - 100, $lng + 100])
@@ -60,8 +60,8 @@ class MobileAppController extends Controller
             ->latest()
             ->get();
 
-        dd(str_replace_array('?', \DB::getQueryLog()[0]['bindings'],
-            \DB::getQueryLog()[0]['query']));
+        /*dd(str_replace_array('?', \DB::getQueryLog()[0]['bindings'],
+            \DB::getQueryLog()[0]['query']));*/
 
 
         if (count($readings) > 0){
