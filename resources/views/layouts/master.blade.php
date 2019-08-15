@@ -333,7 +333,10 @@
                         {{--</div>--}}
                     {{--</li>--}}
                     <li class="nav-item">
-                        <a class="nav-link border border-primary" href="{{ url('/products') }}" target="_blank"><strong>Order device</strong> </a>
+                        <a class="nav-link border border-primary" href="{{ url('/products') }}" target="_blank"><strong>Order Device</strong> </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link border border-primary" href="{{ url('/key') }}" target="_blank"><strong>Developers</strong> </a>
                     </li>
                     <div class="topbar-divider d-none d-sm-block"></div>
                    

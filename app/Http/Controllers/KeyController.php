@@ -134,7 +134,7 @@ class KeyController extends Controller
                 ->whereRaw("`created_at` >= STR_TO_DATE('$from', '%Y-%m-%d %H:%i:%s')")
                 ->whereRaw("`created_at` <= STR_TO_DATE('$to', '%Y-%m-%d %H:%i:%s')")
                 ->latest()
-                ->paginate(5);
+                ->paginate(50);
 
             /*dd(str_replace_array('?', \DB::getQueryLog()[0]['bindings'],
                 \DB::getQueryLog()[0]['query']));*/
