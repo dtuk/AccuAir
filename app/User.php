@@ -37,4 +37,9 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function isAdmin()
+    {
+        return auth()->check() && Admin::where('user_id', auth()->user()->id)->count() > 0;
+    }
 }

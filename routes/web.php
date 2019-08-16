@@ -76,6 +76,12 @@ Route::get('invoices', function (){
     return view('invoices', ['invoices' => $invoices]);
 });
 
+Route::get('invoices/{id}', function ($id){
+    \Stripe\Stripe::setApiKey('sk_test_cQLq5PIwrddJM7RV6drAZKLs00k57KiueJ');
+    $invoices = \App\User::findOrFail($id)->invoices();
+    return view('invoices', ['invoices' => $invoices]);
+});
+
 Route::get('user/invoice/{invoice}', function (\Illuminate\Http\Request $request, $invoiceId) {
     \Stripe\Stripe::setApiKey('sk_test_cQLq5PIwrddJM7RV6drAZKLs00k57KiueJ');
     return $request->user()->downloadInvoice($invoiceId, [
@@ -85,11 +91,7 @@ Route::get('user/invoice/{invoice}', function (\Illuminate\Http\Request $request
 });
 
 
-Route::get('/admin',function(){
-
-
-    return view('  admin.allorder');
-});
+Route::resource('admin', 'AdminController');
 
 
 Route::resource('key', 'KeyController');

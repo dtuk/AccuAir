@@ -9,6 +9,8 @@ use DB;
 
 class OrderController extends Controller
 {
+
+
     public function post()
     {
         return view('customer');
