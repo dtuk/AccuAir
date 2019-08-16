@@ -68,6 +68,15 @@
 
                                                                     <div class="col-md-2">
                                                                         <strong>Status:</strong> {{ $order->getStatus() }}
+                                                                        <br>
+                                                                        @if($order->status < 2)
+                                                                            <form action="/orderupdate/{{ $order->id }}" method="post">
+                                                                                @csrf
+                                                                                <button type="submit" class="btn btn-outline-info">
+                                                                                    Mark as Complete
+                                                                                </button>
+                                                                            </form>
+                                                                        @endif
                                                                     </div>
                                                                     <div class="col-md-2">
                                                                         <strong>Ordered at:</strong> {{ $order->created_at }}

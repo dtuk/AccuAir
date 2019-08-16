@@ -332,10 +332,15 @@
                             {{--<a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>--}}
                         {{--</div>--}}
                     {{--</li>--}}
-                    <li class="nav-item">
+                    @if(auth()->check() && auth()->user()->isAdmin())
+                        <li class="nav-item mr-1">
+                            <a class="nav-link border border-danger" href="{{ url('/admin') }}" target="_blank"><strong>Admin Dashboard</strong> </a>
+                        </li>
+                    @endif
+                    <li class="nav-item mr-1">
                         <a class="nav-link border border-primary" href="{{ url('/products') }}" target="_blank"><strong>Order Device</strong> </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mr-1">
                         <a class="nav-link border border-primary" href="{{ url('/key') }}" target="_blank"><strong>Developers</strong> </a>
                     </li>
                     <div class="topbar-divider d-none d-sm-block"></div>

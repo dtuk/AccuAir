@@ -90,6 +90,7 @@ Route::get('user/invoice/{invoice}', function (\Illuminate\Http\Request $request
     ]);
 });
 
+Route::post('/orderupdate/{id}', 'OrderController@orderupdate');
 
 Route::resource('admin', 'AdminController');
 

@@ -10,6 +10,16 @@ use DB;
 class OrderController extends Controller
 {
 
+    public function orderupdate($id)
+    {
+        if (auth()->check() && auth()->user()->isAdmin()){
+            $order = Order::findOrFail($id);
+            $order->status = 2;
+            $order->save();
+            return redirect()->back();
+        }
+    }
+
 
     public function post()
     {
