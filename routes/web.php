@@ -90,6 +90,10 @@ Route::get('user/invoice/{invoice}', function (\Illuminate\Http\Request $request
     ]);
 });
 
+Route::get('getpredictions', function (){
+    return view('getpredictions');
+});
+
 Route::post('/orderupdate/{id}', 'OrderController@orderupdate');
 
 Route::resource('admin', 'AdminController');
